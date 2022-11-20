@@ -1,0 +1,17 @@
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+F:\Intentos\Hotel.0.6\Persistence\bin\Debug\net6.0\Persistence.deps.json
+F:\Intentos\Hotel.0.6\Persistence\bin\Debug\net6.0\Persistence.dll
+F:\Intentos\Hotel.0.6\Persistence\bin\Debug\net6.0\Persistence.pdb
+F:\Intentos\Hotel.0.6\Persistence\bin\Debug\net6.0\DomainClass.dll
+F:\Intentos\Hotel.0.6\Persistence\bin\Debug\net6.0\DomainClass.pdb
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\Persistence.dll
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\Persistence.pdb
+F:\Intentos\Hotel.0.6\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+F:\Intentos\Hotel.0.6\Persistence\bin\Debug\net6.0\ApplicationServices.dll
+F:\Intentos\Hotel.0.6\Persistence\bin\Debug\net6.0\ApplicationServices.pdb

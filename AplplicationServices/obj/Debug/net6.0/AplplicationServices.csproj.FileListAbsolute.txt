@@ -1,0 +1,15 @@
+F:\Intentos\Hotel.0.6\AplplicationServices\bin\Debug\net6.0\AplplicationServices.deps.json
+F:\Intentos\Hotel.0.6\AplplicationServices\bin\Debug\net6.0\AplplicationServices.dll
+F:\Intentos\Hotel.0.6\AplplicationServices\bin\Debug\net6.0\AplplicationServices.pdb
+F:\Intentos\Hotel.0.6\AplplicationServices\bin\Debug\net6.0\DomainClass.dll
+F:\Intentos\Hotel.0.6\AplplicationServices\bin\Debug\net6.0\DomainClass.pdb
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\AplplicationServices.csproj.AssemblyReference.cache
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\AplplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\AplplicationServices.AssemblyInfoInputs.cache
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\AplplicationServices.AssemblyInfo.cs
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\AplplicationServices.csproj.CoreCompileInputs.cache
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\AplplicationServices.csproj.CopyComplete
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\AplplicationServices.dll
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\refint\AplplicationServices.dll
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\AplplicationServices.pdb
+F:\Intentos\Hotel.0.6\AplplicationServices\obj\Debug\net6.0\ref\AplplicationServices.dll
