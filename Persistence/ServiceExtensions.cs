@@ -9,15 +9,16 @@ namespace Persistence
 {
     public static class ServiceExtensions
     {
-        public static void AddPersistenceInfraestructure(this IServiceCollection services, IConfiguration configuration)
+        // Agrega la infraestructura de persistencia a la colección de servicios de la aplicación
+        public static void AddPersistenceInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             // Configuración de DbContext
-            services.AddDbContext<HotelAppContex>(options => options.UseSqlServer(configuration.GetConnectionString("MsSqlServer"), c => c.MigrationsAssembly(typeof(HotelAppContex).Assembly.FullName)));
+            services.AddDbContext<HotelAppContext>(options =>
+                options.UseSqlServer(configuration.GetConnectionString("MsSqlServer"),
+                    c => c.MigrationsAssembly(typeof(HotelAppContext).Assembly.FullName)));
 
             // Inyección de dependencia para repositorios
-            #region Repositories
             services.AddTransient(typeof(IRepository<>), typeof(MyRepository<>));
-            #endregion
         }
     }
 }

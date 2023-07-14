@@ -3,23 +3,13 @@ namespace DomainClass.Entity
 {
     public class Client : AuditableBaseEntity
     {
-        //private int _Edad;
-        public string NameClient { get; set; }
-        public string LastNameClient { get; set; }
-        public string? CDirection { get; set; }
-        public string Email { get; set; }
-        public string? TelephonoClient { get; set; }
-        public virtual ICollection <Rental> Rentals { get; set; }
-        //public int Edad
-        //{
-        //    get
-        //    {
-        //        if (this._Edad <= 0)
-        //        {
-        //            this._Edad = new DateTime(DateTime.Now.Subtract(this.DateOfBirthClient).Ticks).Year - 1;
-        //        }
-        //        return this._Edad;
-        //    }
-        //}
+        // private int _Edad; (comentario eliminado)
+
+        public string? NameClient { get; set; } // Nombre del cliente
+        public string? LastNameClient { get; set; } // Apellido del cliente
+        public string? CDirection { get; set; } // Dirección del cliente (puede ser nulo)
+        public string? Email { get; set; } // Email del cliente
+        public string? TelephonoClient { get; set; } // Teléfono del cliente (puede ser nulo)
+        public virtual ICollection<Rental>? Rentals { get; set; } // Colección de alquileres asociados al cliente
     }
 }

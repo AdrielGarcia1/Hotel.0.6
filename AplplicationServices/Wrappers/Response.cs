@@ -1,44 +1,26 @@
 ﻿namespace ApplicationServices.Wrappers
 {
-   //Clase Generica que da un formato a las respuestas de la Web API
+    // Clase genérica que da formato a las respuestas de la Web API
     public class Response<T>
     {
-        public Response() { }
-        public Response(T data, string message = null!)
+        public Response() { } // Constructor predeterminado
+
+        public Response(T data, string message = null!) // Constructor que establece la respuesta exitosa con datos y mensaje opcional
         {
             Succeeded = true;
             Data = data;
             Message = message;
         }
-        public Response(string message)
+
+        public Response(string message) // Constructor que establece la respuesta fallida con un mensaje
         {
             Succeeded = false;
             Message = message;
         }
 
-        public bool Succeeded { get; set; }
-        public string Message { get; set; }
-        public List<string> Errors { get; set; }
-        public T Data { get; set; }
-        //public Response()
-        //{
-
-        //}
-        //public Response(T data,string message) //=null)
-        //{
-        //     Succeeded = true;
-        //    Message = message;
-        //    Data = data;
-
-        //}
-        //public Response(string message)
-        //{
-        //    Succeeded = false;
-        //    Message = message;
-        //}
-        //public bool Succeeded { get; set; }
-        //public string Message { get; set; }
-        //public List<string> Errors { get; set; }
-        //public T Data { get; set; }
+        public bool Succeeded { get; set; } // Indica si la respuesta fue exitosa
+        public string Message { get; set; } // Mensaje de la respuesta
+        public List<string> Errors { get; set; } // Lista de errores (opcional)
+        public T Data { get; set; } // Datos de la respuesta (opcional)
     }
 }
