@@ -5,8 +5,8 @@ using System.Text.Json;
 
 namespace Hotel_Web_Api.Middlewares
 {
-    //El middleware es un software que se ensambla en una canalización de aplicaciones
-    //para manejar solicitudes y respuestas.
+    // El middleware es un software que se ensambla en una canalización de aplicaciones
+    // para manejar solicitudes y respuestas.
     public class ErrorHandlerMiddleware
     {
         private readonly RequestDelegate _next;
@@ -15,6 +15,7 @@ namespace Hotel_Web_Api.Middlewares
         {
             _next = next;
         }
+
         public async Task Invoke(HttpContext context)
         {
             try
@@ -25,7 +26,15 @@ namespace Hotel_Web_Api.Middlewares
             {
                 var response = context.Response;
                 response.ContentType = "application/json";
-                    var responseModel = new Response<string>(){ Succeeded = false, Message = error.Message };
+
+                // Crea un objeto Response con el mensaje de error
+                var responseModel = new Response<string>()
+                {
+                    Succeeded = false,
+                    Message = error.Message
+                };
+
+                // Establece el código de estado y maneja diferentes tipos de excepciones
                 switch (error)
                 {
                     case ApiException e:
@@ -33,7 +42,7 @@ namespace Hotel_Web_Api.Middlewares
                         break;
                     case ValidationExceptions e:
                         response.StatusCode = (int)HttpStatusCode.BadRequest;
-                        responseModel.Errors = e.Errors;    
+                        responseModel.Errors = e.Errors;
                         break;
                     case KeyNotFoundException e:
                         response.StatusCode = (int)HttpStatusCode.NotFound;
@@ -42,6 +51,8 @@ namespace Hotel_Web_Api.Middlewares
                         response.StatusCode = StatusCodes.Status500InternalServerError;
                         break;
                 }
+
+                // Serializa el objeto Response en formato JSON y lo envía en la respuesta
                 var result = JsonSerializer.Serialize(responseModel);
                 await response.WriteAsync(result);
             }

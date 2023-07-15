@@ -1,6 +1,7 @@
 ﻿{
   "$schema": "https://json.schemastore.org/launchsettings.json",
   "iisSettings": {
+    // Configuración para IIS Express
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
@@ -10,6 +11,7 @@
   },
   "profiles": {
     "Hotel._0._6": {
+      // Perfil para el proyecto "Hotel._0._6"
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
@@ -20,6 +22,7 @@
       }
     },
     "IIS Express": {
+      // Perfil para IIS Express
       "commandName": "IISExpress",
       "launchBrowser": true,
       "launchUrl": "swagger",

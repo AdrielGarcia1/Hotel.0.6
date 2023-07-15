@@ -14,10 +14,10 @@ namespace ApplicationServices.Features.Tipes.Queries.SelectByQuery
     // Clase que maneja la ejecución de la consulta
     public class SelectTipeByQueryHandler : IRequestHandler<SelectTipeByQuery, Response<TipeDTOs>>
     {
-        private readonly IRepository<Types> _repository; // Repositorio de Tipos
+        private readonly IRepository<DomainClass.Entity.Types> _repository; // Repositorio de Tipos
         private readonly IMapper _mapper; // Objeto Mapper para mapear el Tipo a un DTO
 
-        public SelectTipeByQueryHandler(IRepository<Types> repository, IMapper mapper)
+        public SelectTipeByQueryHandler(IRepository<DomainClass.Entity.Types> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

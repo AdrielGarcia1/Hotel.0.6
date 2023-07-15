@@ -13,10 +13,10 @@ namespace ApplicationServices.Features.Tipes.Commands.UpdateTipeCommand
     }
     public class UpdateTipeCommandHandler : IRequestHandler<UpdateTipeCommand, Response<long>>
     {
-        private readonly IRepository<Types> _repository;
+        private readonly IRepository<DomainClass.Entity.Types> _repository;
         private readonly IMapper _mapper;
 
-        public UpdateTipeCommandHandler(IRepository<Types> repository, IMapper mapper)
+        public UpdateTipeCommandHandler(IRepository<DomainClass.Entity.Types> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;

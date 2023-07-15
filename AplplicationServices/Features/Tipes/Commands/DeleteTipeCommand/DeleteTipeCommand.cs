@@ -12,9 +12,9 @@ namespace ApplicationServices.Features.Tipes.Commands.DeleteTipeCommand
     // Manejador del comando DeleteTipeCommand
     public class DeleteTipeCommandHandler : IRequestHandler<DeleteTipeCommand, Response<long>>
     {
-        private readonly IRepository<Types> _repository;
+        private readonly IRepository<DomainClass.Entity.Types> _repository;
 
-        public DeleteTipeCommandHandler(IRepository<Types> repository)
+        public DeleteTipeCommandHandler(IRepository<DomainClass.Entity.Types> repository)
         {
             _repository = repository;
         }

@@ -17,7 +17,7 @@ namespace ApplicationServices.Features.Tipes.Commands.CreateTipeCommand
         private readonly IRepository<Types> _repository;
         private readonly IMapper _mapper;
 
-        public CreateTipeCommandHandler(IRepository<Types> repository, IMapper mapper)
+        public CreateTipeCommandHandler(IRepository<DomainClass.Entity.Types> repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
@@ -26,7 +26,7 @@ namespace ApplicationServices.Features.Tipes.Commands.CreateTipeCommand
         public async Task<Response<long>> Handle(CreateTipeCommand request, CancellationToken cancellationToken)
         {
             // Mapear los datos del comando a un objeto Types utilizando el mapeador
-            var newRegister = _mapper.Map<Types>(request);
+            var newRegister = _mapper.Map<DomainClass.Entity.Types>(request);
 
             // Agregar el nuevo registro al repositorio
             var data = await _repository.AddAsync(newRegister);
