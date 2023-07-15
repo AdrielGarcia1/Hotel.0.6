@@ -6,7 +6,6 @@ using ApplicationServices.Wrappers;
 using AutoMapper;
 using DomainClass.Entity;
 using MediatR;
-
 namespace ApplicationServices.Features.Rooms.Queries.SelectAllQueries
 {
     public class SelectRoomQuery : IRequest<PaginateResponse<IEnumerable<RoomDTOs>>>
@@ -20,7 +19,6 @@ namespace ApplicationServices.Features.Rooms.Queries.SelectAllQueries
         {
             private readonly IRepository<Room> _repository;
             private readonly IMapper _mapper;
-
             public SelectRoomQueryHHandler (IRepository<Room> repository, IMapper mapper)
             {
                 _repository = repository;
@@ -36,12 +34,10 @@ namespace ApplicationServices.Features.Rooms.Queries.SelectAllQueries
                     Cost = request.Cost,
                     IsDeleted = request.IsDeleted
                 };
-
                 var Rooms = await _repository.ListAsync(new PaginatedRoomSpecification(ResponseFilter));
                 var RoomDTO = _mapper.Map<IEnumerable<RoomDTOs>>(Rooms);
                 return new PaginateResponse<IEnumerable<RoomDTOs>>(RoomDTO, request.PageNumber, request.PageSize, request.IsDeleted);
             }
         }
     }
-
 }

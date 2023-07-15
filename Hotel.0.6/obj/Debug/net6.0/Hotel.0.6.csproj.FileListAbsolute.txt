@@ -90,3 +90,8 @@ F:\Intentos\Hotel.0.6\Hotel.0.6\bin\Debug\net6.0\ApplicationServices.pdb
 F:\Intentos\Hotel.0.6\Hotel.0.6\bin\Debug\net6.0\Persistence.pdb
 F:\Intentos\Hotel.0.6\Hotel.0.6\bin\Debug\net6.0\DomainClass.pdb
 F:\Intentos\Hotel.0.6\Hotel.0.6\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+F:\Intentos\Hotel.0.6\Hotel.0.6\obj\Debug\net6.0\staticwebassets\msbuild.Hotel.0.6.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Intentos\Hotel.0.6\Hotel.0.6\obj\Debug\net6.0\staticwebassets\msbuild.build.Hotel.0.6.props
+F:\Intentos\Hotel.0.6\Hotel.0.6\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Hotel.0.6.props
+F:\Intentos\Hotel.0.6\Hotel.0.6\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Hotel.0.6.props
+F:\Intentos\Hotel.0.6\Hotel.0.6\obj\Debug\net6.0\staticwebassets.pack.json

@@ -7,33 +7,34 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace ApplicationServices.Features.Rooms.Commands.DeleteRoomCommand
 {
+    // Comando para eliminar una habitación
     public class DeleteRoomCommand : IRequest<Response<long>>
     {
-        public long Id { get; set; }
+        public long Id { get; set; } // Id de la habitación a eliminar
     }
+    // Manejador del comando para eliminar una habitación
     public class DeleteRoomCommandHandler : IRequestHandler<DeleteRoomCommand, Response<long>>
     {
         private readonly IRepository<Room> _repository;
+
         public DeleteRoomCommandHandler(IRepository<Room> repository)
         {
             _repository = repository;
         }
-
         public async Task<Response<long>> Handle(DeleteRoomCommand request, CancellationToken cancellationToken)
         {
-            var Room = await _repository.GetByIdAsync(request.Id);
+            var Room = await _repository.GetByIdAsync(request.Id); // Obtener la habitación por su Id
 
             if (Room == null)
             {
-                throw new KeyNotFoundException($"Registro no encontrado con el Id {request.Id}");
+                throw new KeyNotFoundException($"Registro no encontrado con el Id {request.Id}"); // Si no se encuentra la habitación, lanzar una excepción
             }
             else
             {
-                await _repository.DeleteAsync(Room);
-                return new Response<long>(Room.Id);
+                await _repository.DeleteAsync(Room); // Eliminar la habitación
+                return new Response<long>(Room.Id); // Devolver el Id de la habitación eliminada en la respuesta
             }
         }
     }

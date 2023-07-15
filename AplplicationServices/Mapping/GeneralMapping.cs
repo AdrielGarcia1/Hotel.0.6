@@ -8,34 +8,41 @@ using ApplicationServices.Features.Tipes.Commands.CreateTipeCommand;
 using ApplicationServices.Features.UserReceps.Commands.CreateUserRecepCommand;
 using AutoMapper;
 using DomainClass.Entity;
-
 namespace ApplicationServices.Mapping
 {
     public class GeneralMapping : Profile
     {
-            public GeneralMapping()
-            {
-                //Origen Client Destino ClientDTOs
-                CreateMap<CreateClientCommand, Client>();
-                CreateMap<Client, ClientDTOs>();
+        public GeneralMapping()
+        {
+            // Mapeo de comandos a entidades y viceversa
 
-                CreateMap<CreateUserRecepCommand, UserRecep>();
-                CreateMap<UserRecep, UserRecepDTOs>();
-            
-                CreateMap<CreateRecepcionistCommand, Receptionist>();
-                CreateMap<Receptionist, ReceptionistDTOs>();
-            
-                CreateMap<CreateRentalCommand, Rental>();
-                CreateMap<Rental, RentalDTOs>();
-            
-                CreateMap<CreateRoomCommand, Room>();
-                CreateMap<Room, RoomDTOs>();
+            // Client
+            CreateMap<CreateClientCommand, Client>();
+            CreateMap<Client, ClientDTOs>();
 
-                CreateMap<CreateTipeCommand,Type>();
-                CreateMap<Types, TipeDTOs>();
-            
-                CreateMap<CreateEstateCommand, Estate>();
-                CreateMap<Estate, EstateDTOs>();
+            // UserRecep
+            CreateMap<CreateUserRecepCommand, UserRecep>();
+            CreateMap<UserRecep, UserRecepDTOs>();
+
+            // Receptionist
+            CreateMap<CreateRecepcionistCommand, Receptionist>();
+            CreateMap<Receptionist, ReceptionistDTOs>();
+
+            // Rental
+            CreateMap<CreateRentalCommand, Rental>();
+            CreateMap<Rental, RentalDTOs>();
+
+            // Room
+            CreateMap<CreateRoomCommand, Room>();
+            CreateMap<Room, RoomDTOs>();
+
+            // Type
+            CreateMap<CreateTipeCommand, Types>();
+            CreateMap<Types, TipeDTOs>();
+
+            // Estate
+            CreateMap<CreateEstateCommand, Estate>();
+            CreateMap<Estate, EstateDTOs>();
         }
     }
 }

@@ -8,24 +8,29 @@ namespace ApplicationServices.Specification.CLientS
     {
         public PaginatedCLientSpecification(ClientResponseFilter filter)
         {
+            // Aplicar la paginación en la consulta
             Query.Skip((filter.PageNumber - 1) * filter.PageSize)
-                  .Take(filter.PageSize);
+                 .Take(filter.PageSize);
 
+            // Realizar una búsqueda de coincidencia parcial en el campo NameClient
             if (!String.IsNullOrEmpty(filter.NameClient))
                 Query.Search(x => x.NameClient, "%" + filter.NameClient + "%");
 
+            // Realizar una búsqueda de coincidencia parcial en el campo LastNameClient
             if (!String.IsNullOrEmpty(filter.LastNameClient))
                 Query.Search(x => x.LastNameClient, "%" + filter.LastNameClient + "%");
 
-            if(filter.IsDeleted == true)
+            // Filtrar las entidades marcadas como eliminadas si IsDeleted es true
+            if (filter.IsDeleted == true)
             {
                 Query.Where(x => x.IsDeleted == true);
-            }else
+            }
+            else
             {
+                // Filtrar las entidades no eliminadas si IsDeleted es false
                 Query.Where(x => x.IsDeleted == false);
             }
-
         }
-
     }
 }
+

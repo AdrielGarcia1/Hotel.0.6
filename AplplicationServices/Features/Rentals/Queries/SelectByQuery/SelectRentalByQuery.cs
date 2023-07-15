@@ -11,6 +11,7 @@ namespace ApplicationServices.Features.Rentals.Queries.SelectByQuery
     {
         public long Id { get; set; }
     }
+
     public class SelectRentalByQueryHandler : IRequestHandler<SelectRentalByQuery, Response<RentalDTOs>>
     {
         private readonly IRepository<Rental> _repository;
@@ -33,7 +34,6 @@ namespace ApplicationServices.Features.Rentals.Queries.SelectByQuery
             {
                 var dto = _mapper.Map<RentalDTOs>(Rental);
                 return new Response<RentalDTOs>(dto);
-
             }
         }
     }

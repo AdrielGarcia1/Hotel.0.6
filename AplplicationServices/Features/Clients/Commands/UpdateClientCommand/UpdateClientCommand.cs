@@ -3,7 +3,6 @@ using ApplicationServices.Wrappers;
 using AutoMapper;
 using DomainClass.Entity;
 using MediatR;
-
 namespace ApplicationServices.Features.Clients.Commands.UpdateClientCommand
 {
     public class UpdateClientCommand : IRequest<Response<long>>
@@ -15,24 +14,25 @@ namespace ApplicationServices.Features.Clients.Commands.UpdateClientCommand
         public string Email { get; set; }
         public string TelephonoClient { get; set; }
     }
-        public class UpdateClientCommandHandler : IRequestHandler<UpdateClientCommand, Response<long>>
+    public class UpdateClientCommandHandler : IRequestHandler<UpdateClientCommand, Response<long>>
+    {
+        private readonly IRepository<Client> _repository;
+
+        public UpdateClientCommandHandler(IRepository<Client> repository, IMapper mapper)
         {
-            private readonly IRepository<Client> _repository;
-
-            public UpdateClientCommandHandler(IRepository<Client> repository, IMapper mapper)
-            {
-                _repository = repository;
-            }
-
-          public async Task<Response<long>> Handle(UpdateClientCommand request, CancellationToken cancellationToken)
-          {
+            _repository = repository;
+        }
+        public async Task<Response<long>> Handle(UpdateClientCommand request, CancellationToken cancellationToken)
+        {
+            // Obtener el cliente a actualizar por su Id
             var Client = await _repository.GetByIdAsync(request.Id);
-
-            if(Client==null)
+            if (Client == null)
             {
                 throw new KeyNotFoundException($"Registro no encontrado con el Id {request.Id}");
-            }else
+            }
+            else
             {
+                // Actualizar los datos del cliente con los valores proporcionados
                 Client.NameClient = request.NameClient;
                 Client.LastNameClient = request.LastNameClient;
                 Client.CDirection = request.CDirection;
@@ -40,7 +40,7 @@ namespace ApplicationServices.Features.Clients.Commands.UpdateClientCommand
                 Client.TelephonoClient = request.TelephonoClient;
                 await _repository.UpdateAsync(Client);
             }
-            return new Response<long>(Client.Id);
-          }
+            return new Response<long>(Client.Id); // Devolver el Id del cliente actualizado en la respuesta
         }
+    }
 }

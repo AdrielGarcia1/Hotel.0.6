@@ -33,7 +33,6 @@ namespace ApplicationServices.Features.Rentals.Queries.SelectAllQueries
                     TotalCost = request.TotalCost,
                     IsDeleted = request.IsDeleted
                 };
-
                 var Rentals = await _repository.ListAsync(new PaginatedRentalSpecification(ResponseFilter));
                 var RentalDTO = _mapper.Map<IEnumerable<RentalDTOs>>(Rentals);
                 return new PaginateResponse<IEnumerable<RentalDTOs>>(RentalDTO, request.PageNumber, request.PageSize, request.IsDeleted);
