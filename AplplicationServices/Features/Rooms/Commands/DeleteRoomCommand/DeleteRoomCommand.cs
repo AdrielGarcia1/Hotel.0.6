@@ -5,6 +5,7 @@ using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 namespace ApplicationServices.Features.Rooms.Commands.DeleteRoomCommand
@@ -13,6 +14,7 @@ namespace ApplicationServices.Features.Rooms.Commands.DeleteRoomCommand
     public class DeleteRoomCommand : IRequest<Response<long>>
     {
         public long Id { get; set; } // Id de la habitación a eliminar
+        public bool IsDeleted { get; set; }
     }
     // Manejador del comando para eliminar una habitación
     public class DeleteRoomCommandHandler : IRequestHandler<DeleteRoomCommand, Response<long>>
@@ -33,9 +35,12 @@ namespace ApplicationServices.Features.Rooms.Commands.DeleteRoomCommand
             }
             else
             {
-                await _repository.DeleteAsync(Room); // Eliminar la habitación
-                return new Response<long>(Room.Id); // Devolver el Id de la habitación eliminada en la respuesta
+                // Marcar la habitación como eliminado
+                Room.IsDeleted = true;
+                await _repository.UpdateAsync(Room);
+
             }
+            return new Response<long>(Room.Id); // Devolver el Id de la habitación eliminada en la respuesta
         }
     }
 }

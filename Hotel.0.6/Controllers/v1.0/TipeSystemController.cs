@@ -3,7 +3,7 @@ using ApplicationServices.Features.Tipes.Commands.DeleteTipeCommand;
 using ApplicationServices.Features.Tipes.Commands.UpdateTipeCommand;
 using ApplicationServices.Features.Tipes.Queries.SelectAllQueries;
 using ApplicationServices.Features.Tipes.Queries.SelectByQuery;
-using ApplicationServices.filters.Tipe;
+using ApplicationServices.filters.Types;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Hotel_Web_Api.Controllers.v1._0

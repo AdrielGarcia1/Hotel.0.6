@@ -26,10 +26,11 @@ namespace ApplicationServices.Features.Estates.Commands.DeletEstateCommand
             }
             else
             {
-                Estate.IsDeleted = false;
+                Estate.IsDeleted = true;
                 await _repository.DeleteAsync(Estate);
-                return new Response<long>(Estate.Id);
-            }
+               
+            } 
+            return new Response<long>(Estate.Id);
         }
     }
 }

@@ -2,24 +2,22 @@
 using ApplicationServices.Wrappers;
 using DomainClass.Entity;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Net.Sockets;
+
 namespace ApplicationServices.Features.UserReceps.Commands.DeleteUserRecepCommand
 {
     // Clase que representa el comando para eliminar un Usuario de Recepción
     public class DeleteUserRecepCommand : IRequest<Response<long>>
     {
         public long Id { get; set; } // Id del usuario a eliminar
+        public bool IsDeleted { get; set; }
     }
     // Clase que maneja la ejecución del comando
     public class DeleteUserRecepCommandHandler : IRequestHandler<DeleteUserRecepCommand, Response<long>>
     {
-        private readonly IRepository<DomainClass.Entity.UserRecep> _repository; // Repositorio de Usuarios de Recepción
+        private readonly IRepository<UserRecep> _repository; // Repositorio de Usuarios de Recepción
 
-        public DeleteUserRecepCommandHandler(IRepository<DomainClass.Entity.UserRecep> repository)
+        public DeleteUserRecepCommandHandler(IRepository<UserRecep> repository)
         {
             _repository = repository;
         }
@@ -38,11 +36,11 @@ namespace ApplicationServices.Features.UserReceps.Commands.DeleteUserRecepComman
             else
             {
                 // Eliminar el Usuario de Recepción
-                await _repository.DeleteAsync(UserRecep);
-
-                // Devolver una instancia de Response con el Id del registro eliminado
-                return new Response<long>(UserRecep.Id);
+                UserRecep.IsDeleted = true;
+                await _repository.UpdateAsync(UserRecep);
             }
+            // Devolver una instancia de Response con el Id del registro eliminado
+            return new Response<long>(UserRecep.Id);
         }
     }
 }

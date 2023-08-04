@@ -1,5 +1,5 @@
 ﻿using ApplicationServices.Wrappers;
-namespace ApplicationServices.filters.Tipe
+namespace ApplicationServices.filters.Types
 {
     // Filtro de respuesta para las consultas de Tipe
     // Hereda de ParameterResponse para incluir la paginación y otros parámetros comunes

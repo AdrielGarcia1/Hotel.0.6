@@ -18,12 +18,12 @@ namespace Persistence.Context
         // Definición de DbSet para cada entidad
 
         DbSet<Client> Client { set; get; }
-        DbSet<Receptionist> Receptionist { set; get; }
+        DbSet<Receptionist> Recepcionist { set; get; }
         DbSet<Estate> Estate { set; get; }
         DbSet<UserRecep> User1 { set; get; }
         DbSet<Rental> Rental { set; get; }
         DbSet<Room> Room { set; get; }
-        DbSet<Types> Type { set; get; }
+        DbSet<Types> Tipe { set; get; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {

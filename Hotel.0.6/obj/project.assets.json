@@ -3916,11 +3916,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
+      "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
       "projectName": "Hotel.0.6",
-      "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
+      "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
       "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-      "outputPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\obj\\",
+      "outputPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3938,11 +3938,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj": {
-              "projectPath": "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj"
+            "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj": {
+              "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj"
             },
-            "F:\\Intentos\\Hotel.0.6\\Persistence\\Persistence.csproj": {
-              "projectPath": "F:\\Intentos\\Hotel.0.6\\Persistence\\Persistence.csproj"
+            "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\Persistence.csproj": {
+              "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\Persistence.csproj"
             }
           }
         }

@@ -1,5 +1,5 @@
 ﻿using ApplicationServices.DTOs;
-using ApplicationServices.filters.Tipe;
+using ApplicationServices.filters.Types;
 using ApplicationServices.Interfaces;
 using ApplicationServices.Specification.TipeS;
 using ApplicationServices.Wrappers;

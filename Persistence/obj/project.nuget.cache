@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DwnHXUg7w3D0SGNQpxKm6xbiYEdcbPj66OH3D590/bitVcUHTZnpZeM34o/Em4pp7q2bk25ysG+nnE5MyIU6QQ==",
+  "dgSpecHash": "+/6pqi4NYQG/DsnYTD1e2LLH0anLrCoRWuOEeGAKPRLUHBy0zfXBMCiXUqauGyxkiyTm0DV8anJB+USnoY2uoQ==",
   "success": true,
-  "projectFilePath": "F:\\Intentos\\Hotel.0.6\\Persistence\\Persistence.csproj",
+  "projectFilePath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adrie\\.nuget\\packages\\ardalis.specification\\6.1.0\\ardalis.specification.6.1.0.nupkg.sha512",
     "C:\\Users\\adrie\\.nuget\\packages\\ardalis.specification.entityframeworkcore\\6.1.0\\ardalis.specification.entityframeworkcore.6.1.0.nupkg.sha512",

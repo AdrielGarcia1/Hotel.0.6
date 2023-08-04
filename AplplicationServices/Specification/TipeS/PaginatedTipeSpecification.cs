@@ -1,4 +1,4 @@
-﻿using ApplicationServices.filters.Tipe;
+﻿using ApplicationServices.filters.Types;
 using Ardalis.Specification;
 using DomainClass.Entity;
 

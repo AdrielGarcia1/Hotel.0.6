@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BbXd3G4B5KKBoXNdw6YC07VR/Z9WDaARncRBcR2qSdKbzhF14125NHyWp8XtE8c+igbLqczdtBjCPvvJk9mQqA==",
+  "dgSpecHash": "B246CsOqCHo9VtGC9Qa9scdU2H6IW6M4y69kgTHh+gbhoyT6zw5LHVu04nkZCfapcGUK+w1SYjD39EhdDa9aSQ==",
   "success": true,
-  "projectFilePath": "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj",
+  "projectFilePath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adrie\\.nuget\\packages\\ardalis.specification\\6.1.0\\ardalis.specification.6.1.0.nupkg.sha512",
     "C:\\Users\\adrie\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",

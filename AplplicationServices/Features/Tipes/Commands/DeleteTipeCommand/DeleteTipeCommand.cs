@@ -2,12 +2,15 @@
 using ApplicationServices.Wrappers;
 using DomainClass.Entity;
 using MediatR;
+using System.Net.Sockets;
+
 namespace ApplicationServices.Features.Tipes.Commands.DeleteTipeCommand
 {
     // Comando para eliminar un Tipe
     public class DeleteTipeCommand : IRequest<Response<long>>
     {
         public long Id { get; set; }
+        public bool IsDeleted { get; set; }
     }
     // Manejador del comando DeleteTipeCommand
     public class DeleteTipeCommandHandler : IRequestHandler<DeleteTipeCommand, Response<long>>
@@ -31,9 +34,11 @@ namespace ApplicationServices.Features.Tipes.Commands.DeleteTipeCommand
             else
             {
                 // Si el Tipe existe, eliminarlo
-                await _repository.DeleteAsync(Tipe);
-                return new Response<long>(Tipe.Id);
+                Tipe.IsDeleted = true;
+                await _repository.UpdateAsync(Tipe);
+                
             }
+            return new Response<long>(Tipe.Id);
         }
     }
 }

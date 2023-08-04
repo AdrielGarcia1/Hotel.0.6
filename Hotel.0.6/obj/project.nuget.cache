@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OR84Q34msmxXDRZprR5uy3xafwFJf71HD2L23fyrLCwOLcgifB4pf0/R/vrSSo7BtsBBRDzLVLkFaTcJoBVAyQ==",
+  "dgSpecHash": "ZFOkb8wTpVtkuXR2QzHUgoMoKPcxiYGTDzgELxZ9RPDGOiCy83SJSkhAeRcw3gQ3BaNsnB+rnd00RgF/J1r1YQ==",
   "success": true,
-  "projectFilePath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
+  "projectFilePath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adrie\\.nuget\\packages\\ardalis.specification\\6.1.0\\ardalis.specification.6.1.0.nupkg.sha512",
     "C:\\Users\\adrie\\.nuget\\packages\\ardalis.specification.entityframeworkcore\\6.1.0\\ardalis.specification.entityframeworkcore.6.1.0.nupkg.sha512",

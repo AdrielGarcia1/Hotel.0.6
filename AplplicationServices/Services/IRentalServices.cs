@@ -7,6 +7,6 @@ namespace ApplicationServices.Services
         // Define un método para realizar la transformación y persistencia de un alquiler (Rental)
         // Retorna un valor entero que indica el resultado de la operación
 
-        public Task<int> RentalDTOs(Rental rental);
+        public Task<int> RentalDTOs( Rental rental);
     }
 }

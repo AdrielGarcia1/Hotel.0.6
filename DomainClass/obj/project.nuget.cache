@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VjXno4vUy7D35TnnZrff0nLCgOhLehXkBNhoIIUNN/pjqARGRIj8+O5LsyZkWfafNbzEFQ+j312wEl+3FfalPQ==",
+  "dgSpecHash": "hl9V1gxrM09LxbzUpUDbQFzatbvhTPdkUv9aBAbul7Mm32pY3DhkKfF6zYzjAcza1SeUwnkAZB5xv7mgmY9zCA==",
   "success": true,
-  "projectFilePath": "F:\\Intentos\\Hotel.0.6\\DomainClass\\DomainClass.csproj",
+  "projectFilePath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\DomainClass.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

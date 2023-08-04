@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj": {}
+    "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj": {}
   },
   "projects": {
-    "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj": {
+    "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj",
+        "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj",
         "projectName": "ApplicationServices",
-        "projectPath": "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj",
+        "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj",
         "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-        "outputPath": "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\obj\\",
+        "outputPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Intentos\\Hotel.0.6\\DomainClass\\DomainClass.csproj": {
-                "projectPath": "F:\\Intentos\\Hotel.0.6\\DomainClass\\DomainClass.csproj"
+              "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\DomainClass.csproj": {
+                "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\DomainClass.csproj"
               }
             }
           }
@@ -89,14 +89,14 @@
         }
       }
     },
-    "F:\\Intentos\\Hotel.0.6\\DomainClass\\DomainClass.csproj": {
+    "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\DomainClass.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\DomainClass\\DomainClass.csproj",
+        "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\DomainClass.csproj",
         "projectName": "DomainClass",
-        "projectPath": "F:\\Intentos\\Hotel.0.6\\DomainClass\\DomainClass.csproj",
+        "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\DomainClass.csproj",
         "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-        "outputPath": "F:\\Intentos\\Hotel.0.6\\DomainClass\\obj\\",
+        "outputPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -144,14 +144,14 @@
         }
       }
     },
-    "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj": {
+    "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
+        "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
         "projectName": "Hotel.0.6",
-        "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
+        "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6.csproj",
         "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-        "outputPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\obj\\",
+        "outputPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Hotel.0.6\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -169,11 +169,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj": {
-                "projectPath": "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj"
+              "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj": {
+                "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj"
               },
-              "F:\\Intentos\\Hotel.0.6\\Persistence\\Persistence.csproj": {
-                "projectPath": "F:\\Intentos\\Hotel.0.6\\Persistence\\Persistence.csproj"
+              "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\Persistence.csproj": {
+                "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -224,14 +224,14 @@
         }
       }
     },
-    "F:\\Intentos\\Hotel.0.6\\Persistence\\Persistence.csproj": {
+    "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "F:\\Intentos\\Hotel.0.6\\Persistence\\Persistence.csproj",
+        "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\adrie\\.nuget\\packages\\",
-        "outputPath": "F:\\Intentos\\Hotel.0.6\\Persistence\\obj\\",
+        "outputPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\adrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -248,11 +248,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj": {
-                "projectPath": "F:\\Intentos\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj"
+              "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj": {
+                "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\AplplicationServices\\ApplicationServices.csproj"
               },
-              "F:\\Intentos\\Hotel.0.6\\DomainClass\\DomainClass.csproj": {
-                "projectPath": "F:\\Intentos\\Hotel.0.6\\DomainClass\\DomainClass.csproj"
+              "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\DomainClass.csproj": {
+                "projectPath": "F:\\Intentos\\Hotel.0.6\\Hotel.0.6\\DomainClass\\DomainClass.csproj"
               }
             }
           }
